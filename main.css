@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -18,13 +17,11 @@ body {
   height: 100vh;
 }
 
-.booking{
-  background-image: url(./assets/right.png);
+.booking {
+  background-image: url(./assets/bgRight.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
- 
 }
 
 .cover {
@@ -32,7 +29,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- 
 }
 
 .integration {
@@ -40,12 +36,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- 
 }
 
-.notified{
-  font-family: 'Inter', sans-serif;
+.notified {
+  font-family: "Inter", sans-serif;
   border-radius: 1rem 1rem 0.9375rem 0.9375rem;
-background: rgba(37, 37, 37, 0.50);
-/* backdrop-filter: blur(40px); */
+  background: rgba(37, 37, 37, 0.5);
+  /* backdrop-filter: blur(40px); */
 }
