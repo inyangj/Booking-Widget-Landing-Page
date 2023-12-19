@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://frontend-booking-widget.vercel.app/static/css/main.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script type="module" src="./tailwindconfig.js" defer></script>
@@ -21,7 +25,7 @@
         </div>
 
         <button
-          class="cta py-3 px-6 hidden md:block rounded-md text-white border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_Primary_blue shadow-3xl text-sm"
+          class="cta py-3 px-6 hidden md:block rounded-md text-white border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_Primary_blue shadow-3xl text-sm ril-widget-trigger"
         >
           Book Demo
         </button>
@@ -47,16 +51,16 @@
           <ul
             class="grid gap-6 justify-center mt-[9.375rem] text-renaissance_black"
           >
-            <a href="#" target="_blank"><li>Features</li></a>
-            <a href="#" target="_blank"><li>Pricing</li></a>
-            <li id="openModal" class="cursor-pointer">Enterprise</li>
+            <a href="#customer" ><li>Features</li></a>
+            <li  class="openModal">Pricing</li>
+            <li id="" class="cursor-pointer openModal">Enterprise</li>
 
-            <a href="#" target="_blank"><li>Why Choose Us</li></a>
+            <a href="#integrate" ><li>Why Choose Us</li></a>
           </ul>
 
           <button
             id="beta"
-            class="bg-renaissance_Primary_blue py-3 text-white px-6 block mx-auto mt-6 rounded-md"
+            class="bg-renaissance_Primary_blue py-3 text-white px-6 block mx-auto mt-6 rounded-md ril-widget-trigger"
           >
             Book demo
           </button>
@@ -71,11 +75,11 @@
       <ul
         class="md:flex gap-[1.5rem] px-4 sm:gap-[3.5rem] items-center pt-[2.12rem] text-sm sm:text-lg text-renaissance_black hidden"
       >
-        <a href="#" target="_blank"><li>Features</li></a>
-        <a href="#" target="_blank"><li>Pricing</li></a>
-        <li id="openModal" class="cursor-pointer">Enterprise</li>
+        <a href="#customer" ><li>Features</li></a>
+       <li class="openModal">Pricing</li>
+        <li id="" class="cursor-pointer openModal">Enterprise</li>
 
-        <a href="#" target="_blank"><li>Why Choose Us</li></a>
+        <a href="#integrate"><li>Why Choose Us</li></a>
       </ul>
 
       <div class="pt-[3.5rem] h-full md:flex lg:justify-between">
@@ -98,7 +102,7 @@
               Join the Waitlist
             </button> -->
             <button
-              class="cta py-4 px-12 lg:px-20 rounded-md text-white border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_Primary_blue shadow-3xl text-sm"
+              class="cta py-4 px-12 lg:px-20 rounded-md text-white border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_Primary_blue shadow-3xl text-sm ril-widget-trigger"
             >
               Book Demo
             </button>
@@ -123,7 +127,7 @@
 
     <!-- Core features section start -->
 
-    <section class="px-5 xl:px-[12.38rem]">
+    <section id="customer" class="px-5 xl:px-[12.38rem]">
       <h2
         class="text-[2.25rem] font-semibold text-renaissance_gray_3 mb-6 md:mb-12"
       >
@@ -143,7 +147,7 @@
             slots, durations, and more for a personalized touch.
           </p>
           <button
-            class="cta py-3 px-6 rounded-md text-renaissance_Primary_black border border-renaissance_Primary_black shadow-3xl text-sm"
+            class="cta py-3 px-6 rounded-md text-renaissance_Primary_black border border-renaissance_Primary_black shadow-3xl text-sm ril-widget-trigger"
           >
             Book Demo
           </button>
@@ -206,7 +210,7 @@
             with Our Comprehensive Booking Platform.
           </p>
           <button
-            class="cta py-4 px-12 lg:px-20 rounded-md font-semibold text-renaissance_Primary_black border border-renaissance_Primary_black shadow-3xl text-sm"
+            class="cta py-4 px-12 lg:px-20 rounded-md font-semibold text-renaissance_Primary_black border border-renaissance_Primary_black shadow-3xl text-sm ril-widget-trigger"
           >
             Book Demo
           </button>
@@ -485,7 +489,7 @@
     <!-- Booking section start -->
 
     <!-- One Button Integration Section Start-->
-    <section
+    <section id="integrate"
       class="text-renaissance_Primary_black md:flex md:gap-8 lg:gap-0 md:justify-between items-center lg:mx-10 xl:mx-[12.1rem] mb-20 px-4"
     >
       <div class="integration mb-12 py-20 md:w-[23rem]">
@@ -501,7 +505,7 @@
           You can seamlessly integrate your booking into any website, social
           media platform, and all channels.
         </p>
-        <img src="./assets/gif/booking.gif" class="" alt="booking gif">
+        <img src="./assets/gif/booking.gif" class="ril-widget-trigger" alt="booking gif">
       </div>
       <div>
         <h1
@@ -577,7 +581,7 @@
           </li>
         </ul>
         <button
-          class="py-4 px-12 lg:px-20 rounded-md text-renaissance_white border border-renaissance_white shadow-3xl h-fit"
+          class="py-4 px-12 lg:px-20 rounded-md text-renaissance_white border border-renaissance_white shadow-3xl h-fit ril-widget-trigger"
         >
           Book Demo
         </button>
@@ -691,6 +695,13 @@
 
     <!-- Tailored for your needs section Start -->
 
+
+    <!-- Booking widget custom div Starts -->
+
+    <div id="ril-booking-root" data-public-key="9bc2036b-d94b-4720-9f53-9ed98f342acd" data-hide-button="true"></div>
+
+    <!-- Booking widget custom div Ends -->
+
     <!-- footer section Starts -->
     <footer class="bg-renaissance_Primary_black text-white py-10 md:py-16">
       <div
@@ -699,7 +710,7 @@
         <div class="md:flex justify-between w-full items-center">
           <img src="./assets/svg/whiteLogo.svg" class="block" alt="logo icon" />
           <button
-            class="cta py-4 px-12 lg-w-[13.0625rem] xl:px-20 rounded-md font-semibold text-renaissance_Primary_black border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_white shadow-3xl text-sm mt-8 md:mt-0"
+            class="cta py-4 px-12 lg-w-[13.0625rem] xl:px-20 rounded-md font-semibold text-renaissance_Primary_black border border-[rgba(33, 41, 52, 0.07)] bg-renaissance_white shadow-3xl text-sm mt-8 md:mt-0 ril-widget-trigger"
           >
             Book Demo
           </button>
@@ -734,11 +745,11 @@
           <ul
             class="grid h-fit gap-2 items-center pt-[2.12rem] lg:pt-0 sm:text-lg"
           >
-            <a href="#" target="_blank"><li>Features</li></a>
-            <a href="#" target="_blank"><li>Pricing</li></a>
-            <li id="openModal" class="cursor-pointer">Enterprise</li>
+            <a href="#customer"><li>Features</li></a>
+            <li class="openModal">Pricing</li>
+            <li class="cursor-pointer openModal">Enterprise</li>
 
-            <a href="#" target="_blank"><li>Why Choose Us</li></a>
+            <a href="#integrate" ><li>Why Choose Us</li></a>
           </ul>
           <ul
             class="grid h-fit gap-2 items-center pt-[2.12rem] sm:text-lg lg:pt-0"
@@ -747,7 +758,7 @@
             <a href="#" target="_blank"><li>Privacy Policy</li></a>
             <li id="openModal" class="cursor-pointer">Our Blog</li>
 
-            <a href="#" target="_blank"><li>Build with us</li></a>
+            <a href="https://www.renaissancelabs.org/" target="_blank"><li>Build with us</li></a>
           </ul>
         </div>
       </div>
@@ -760,9 +771,61 @@
 
     <!-- Footer Section End-->
 
+    <!-- Sales Modal Start -->
+    <div
+      id="pricingModal"
+      class="modal hidden fixed inset-0 bg-black bg-opacity-50 z-50"
+    >
+      <div
+        class="modal-content bg-white mx-auto mt-10 p-2 md:p-6 rounded-md"
+      >
+      <div id="closeModal" class="flex justify-end mt-4 md:mt-8">
+        <img src="./assets/svg/close.svg" alt="close-icon"></div>
+      <div class=" CONTAINER place-self-center mx-4 lg:mx-[3.5rem] xl:mx-[4.5rem] my-6 lg:mb-[4.5rem] xl:mb-[7rem] flex flex-col gap-[3rem] md:flex-row">
+        <div class="bg-renaissance_Primary_black text-renaissance_white rounded-[1rem] w-full">
+          <div class="grid gap-6 md:gap-8 pl-4 pt-4  pb-[6rem]  md:p-10">
+            <h1 class="text-2xl font-semibold">Our Head office</h1>
+            <p>7 Grace Avenue off kemka Street, Location bus stop, NTA road, Mgbuoba, Port Harcourt.</p>
+           <p><span class="font-semibold">Send a Mail </span> <br/>
+            contact@renaissancelabs.org</p>
+            <p><span class="font-semibold">Give us a Call </span> <br/>
+              (+234) 705 7058 359</p>
+          </div>
+        </div>
+
+          <div class="pb-[6rem] md:pb-0 ">
+            <h1 class="text-2xl font-semibold mb-6">Contact sales</h1>
+            <p class="mb-8">Elevate your business to new heights with our exclusive enterprise subscriptions tailored to meet the unique needs of your business, we combine cutting-edge technology, technical support, and flexible plans to drive your organization's success.</p>
+
+            <form action="" class="grid gap-4">
+              <div>
+                <label for="name" class="font-semibold mb-4">Please tell us your name</label>
+                <input type="text" class="w-full fade" name="name" id="name" placeholder="Your full name">
+              </div>
+              <div>
+                <label class="font-semibold mb-4" for="email">Email Address</label>
+                <input type="email" class="w-full fade" name="email" id="email" placeholder="Your email address">
+              </div>
+              <div>
+                <label for="description" class="font-semibold mb-4">Description</label>
+                <textarea name="description" placeholder="Tell us about your services" class="w-full fade" id="" cols="30" rows="3"></textarea>
+              </div>
+              <button type="submit" class="cta font-semibold py-5 text-renaissance_white bg-[#1A1A1A] sales w-full">CONTACT SALES</button>
+            </form>
+          </div>
+        
+      </div>
+    </div>
+    </div>
+
+    <!-- Sales modal end -->
+   
+
     <script src="./nav.js"></script>
     <script src="./main.js"></script>
     <script src="./gifMap.js"></script>
     <script src="./tailwindconfig.js"></script>
+    <script src="./sales.js"></script>
+    <script src="https://frontend-booking-widget.vercel.app/static/js/main.js"></script>
   </body>
 </html>
