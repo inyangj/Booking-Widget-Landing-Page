@@ -52,7 +52,7 @@
             class="grid gap-6 justify-center mt-[9.375rem] text-renaissance_black"
           >
             <a href="#customer" ><li>Features</li></a>
-            <li  class="openModal">Pricing</li>
+            <li  class="priceModal">Pricing</li>
             <li id="" class="cursor-pointer openModal">Enterprise</li>
 
             <a href="#integrate" ><li>Why Choose Us</li></a>
@@ -76,7 +76,7 @@
         class="md:flex gap-[1.5rem] px-4 sm:gap-[3.5rem] items-center pt-[2.12rem] text-sm sm:text-lg text-renaissance_black hidden"
       >
         <a href="#customer" ><li>Features</li></a>
-       <li class="openModal">Pricing</li>
+       <li class="priceModal">Pricing</li>
         <li id="" class="cursor-pointer openModal">Enterprise</li>
 
         <a href="#integrate"><li>Why Choose Us</li></a>
@@ -746,7 +746,7 @@
             class="grid h-fit gap-2 items-center pt-[2.12rem] lg:pt-0 sm:text-lg"
           >
             <a href="#customer"><li>Features</li></a>
-            <li class="openModal">Pricing</li>
+            <li class="priceModal">Pricing</li>
             <li class="cursor-pointer openModal">Enterprise</li>
 
             <a href="#integrate" ><li>Why Choose Us</li></a>
@@ -756,9 +756,9 @@
           >
             <a href="#" target="_blank"><li>Terms and conditions</li></a>
             <a href="#" target="_blank"><li>Privacy Policy</li></a>
-            <li id="openModal" class="cursor-pointer">Our Blog</li>
+            <a href="https://blog.renaissancelabs.org/" target="_blank"><li class="cursor-pointer">Our Blog</li></a>
 
-            <a href="https://www.renaissancelabs.org/" target="_blank"><li>Build with us</li></a>
+            <a href="https://www.renaissancelabs.org/services" target="_blank"><li>Build with us</li></a>
           </ul>
         </div>
       </div>
@@ -819,6 +819,32 @@
     </div>
 
     <!-- Sales modal end -->
+
+
+
+
+
+    <!-- Price Nav Modal Start -->
+
+    <div
+    id="priceNavModal"
+    class="modal hidden fixed inset-0 bg-black bg-opacity-50 z-50"
+  >
+    <div
+      class="modal bg-white mx-auto mt-10 p-2 md:p-6 rounded-md"
+    >
+    <div id="closePriceModal" class="flex justify-end mt-4 md:mt-8">
+      <img src="./assets/svg/close.svg" alt="close-icon"></div>
+    <div class=" CONTAINER my-6 lg:mb-[4.5rem] xl:mb-[7rem]  text-center">
+      
+
+        <h1 class="text-2xl md:text-3xl lg:text-4xl  font-semibold ">Coming Soon...</h1>
+      
+    </div>
+  </div>
+  </div>
+
+    <!-- Price Nav Modal End -->
    
 
     <script src="./nav.js"></script>
@@ -826,6 +852,7 @@
     <script src="./gifMap.js"></script>
     <script src="./tailwindconfig.js"></script>
     <script src="./sales.js"></script>
+    <script src="./priceNav.js"></script>
     <script src="https://frontend-booking-widget.vercel.app/static/js/main.js"></script>
   </body>
 </html>

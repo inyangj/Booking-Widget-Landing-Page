@@ -70,6 +70,10 @@ box-shadow: 0px 1px 0px 0px rgba(27, 31, 35, 0.05);
   max-height: calc(100vh - 20px); 
   overflow-y: auto;
 }
+.modal {
+  max-height: calc(100vh - 20px); 
+  overflow-y: auto;
+}
 
 
 
